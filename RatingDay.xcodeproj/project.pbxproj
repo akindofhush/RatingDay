@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86767F72C006D9D05CAF7909 /* Pods_RatingDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E5851E4B806173CF9E1012 /* Pods_RatingDay.framework */; };
+		F8826033216B5F2600801743 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826028216B5F2600801743 /* FMResultSet.m */; };
+		F8826034216B5F2600801743 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826029216B5F2600801743 /* FMDatabaseAdditions.m */; };
+		F8826035216B5F2600801743 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F882602D216B5F2600801743 /* FMDatabaseQueue.m */; };
+		F8826036216B5F2600801743 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826031216B5F2600801743 /* FMDatabasePool.m */; };
+		F8826037216B5F2600801743 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826032216B5F2600801743 /* FMDatabase.m */; };
+		F882603A216B5FF000801743 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8826039216B5FF000801743 /* libsqlite3.tbd */; };
+		F882603D216B603100801743 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882603C216B603100801743 /* Restaurant.swift */; };
+		F882603F216B604700801743 /* RestaurantDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882603E216B604700801743 /* RestaurantDAO.swift */; };
+		F8826044216C4E1500801743 /* restaurant.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F8826043216C4E1500801743 /* restaurant.sqlite */; };
+		F8826047216D959F00801743 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826046216D959F00801743 /* CollectionViewController.swift */; };
+		F8826049216D9D3500801743 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8826048216D9D3500801743 /* GoogleService-Info.plist */; };
+		F8A801DD216766C5002BD933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801DC216766C5002BD933 /* AppDelegate.swift */; };
+		F8A801DF216766C5002BD933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801DE216766C5002BD933 /* ViewController.swift */; };
+		F8A801E4216766C7002BD933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A801E3216766C7002BD933 /* Assets.xcassets */; };
+		F8A801E7216766C7002BD933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A801E5216766C7002BD933 /* LaunchScreen.storyboard */; };
+		F8A801FD2167670A002BD933 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801F12167670A002BD933 /* HomeViewController.swift */; };
+		F8A802002167670A002BD933 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A801F62167670A002BD933 /* head.png */; };
+		F8A802012167670A002BD933 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801F72167670A002BD933 /* LoginViewController.swift */; };
+		F8A802042167670A002BD933 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801FA2167670A002BD933 /* RegisterViewController.swift */; };
+		F8A802062167677D002BD933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A802052167677D002BD933 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B207CB2F0A0322D80E3A407 /* Pods-RatingDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RatingDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RatingDay/Pods-RatingDay.debug.xcconfig"; sourceTree = "<group>"; };
+		75E5851E4B806173CF9E1012 /* Pods_RatingDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RatingDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA76D3158E7CBB27E17793A3 /* Pods-RatingDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RatingDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-RatingDay/Pods-RatingDay.release.xcconfig"; sourceTree = "<group>"; };
+		F8826027216B5F2400801743 /* RatingDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RatingDay-Bridging-Header.h"; sourceTree = "<group>"; };
+		F8826028216B5F2600801743 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		F8826029216B5F2600801743 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		F882602A216B5F2600801743 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		F882602B216B5F2600801743 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		F882602C216B5F2600801743 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		F882602D216B5F2600801743 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		F882602E216B5F2600801743 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		F882602F216B5F2600801743 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		F8826030216B5F2600801743 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		F8826031216B5F2600801743 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		F8826032216B5F2600801743 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		F8826039216B5FF000801743 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F882603C216B603100801743 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		F882603E216B604700801743 /* RestaurantDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDAO.swift; sourceTree = "<group>"; };
+		F8826043216C4E1500801743 /* restaurant.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = restaurant.sqlite; sourceTree = "<group>"; };
+		F8826046216D959F00801743 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F8826048216D9D3500801743 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8A801D9216766C5002BD933 /* RatingDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatingDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A801DC216766C5002BD933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8A801DE216766C5002BD933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F8A801E3216766C7002BD933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8A801E6216766C7002BD933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F8A801E8216766C7002BD933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A801F12167670A002BD933 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F8A801F62167670A002BD933 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
+		F8A801F72167670A002BD933 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F8A801FA2167670A002BD933 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		F8A802052167677D002BD933 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8A801D6216766C5002BD933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F882603A216B5FF000801743 /* libsqlite3.tbd in Frameworks */,
+				86767F72C006D9D05CAF7909 /* Pods_RatingDay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB9818CBB190B71CEB7D073D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2B207CB2F0A0322D80E3A407 /* Pods-RatingDay.debug.xcconfig */,
+				AA76D3158E7CBB27E17793A3 /* Pods-RatingDay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F8825FFF2167688900801743 /* Pic */ = {
+			isa = PBXGroup;
+			children = (
+				F8A801F62167670A002BD933 /* head.png */,
+			);
+			name = Pic;
+			sourceTree = "<group>";
+		};
+		F8826026216B5F0700801743 /* fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				F882602A216B5F2600801743 /* FMDatabase.h */,
+				F8826032216B5F2600801743 /* FMDatabase.m */,
+				F882602B216B5F2600801743 /* FMDatabaseAdditions.h */,
+				F8826029216B5F2600801743 /* FMDatabaseAdditions.m */,
+				F8826030216B5F2600801743 /* FMDatabasePool.h */,
+				F8826031216B5F2600801743 /* FMDatabasePool.m */,
+				F882602C216B5F2600801743 /* FMDatabaseQueue.h */,
+				F882602D216B5F2600801743 /* FMDatabaseQueue.m */,
+				F882602F216B5F2600801743 /* FMDB.h */,
+				F882602E216B5F2600801743 /* FMResultSet.h */,
+				F8826028216B5F2600801743 /* FMResultSet.m */,
+				F8826027216B5F2400801743 /* RatingDay-Bridging-Header.h */,
+			);
+			name = fmdb;
+			sourceTree = "<group>";
+		};
+		F8826038216B5FF000801743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8826039216B5FF000801743 /* libsqlite3.tbd */,
+				75E5851E4B806173CF9E1012 /* Pods_RatingDay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F882603B216B601300801743 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F882603C216B603100801743 /* Restaurant.swift */,
+				F882603E216B604700801743 /* RestaurantDAO.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F8826042216C36B900801743 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				F8826043216C4E1500801743 /* restaurant.sqlite */,
+			);
+			name = db;
+			sourceTree = "<group>";
+		};
+		F8826045216D956300801743 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				F8826046216D959F00801743 /* CollectionViewController.swift */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		F8A801D0216766C5002BD933 = {
+			isa = PBXGroup;
+			children = (
+				F8A801DB216766C5002BD933 /* RatingDay */,
+				F8A801DA216766C5002BD933 /* Products */,
+				F8826038216B5FF000801743 /* Frameworks */,
+				CB9818CBB190B71CEB7D073D /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		F8A801DA216766C5002BD933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8A801D9216766C5002BD933 /* RatingDay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8A801DB216766C5002BD933 /* RatingDay */ = {
+			isa = PBXGroup;
+			children = (
+				F8826048216D9D3500801743 /* GoogleService-Info.plist */,
+				F8826045216D956300801743 /* profile */,
+				F8826042216C36B900801743 /* db */,
+				F882603B216B601300801743 /* model */,
+				F8826026216B5F0700801743 /* fmdb */,
+				F8825FFF2167688900801743 /* Pic */,
+				F8A80207216767AB002BD933 /* Starter */,
+				F8A801DC216766C5002BD933 /* AppDelegate.swift */,
+				F8A801DE216766C5002BD933 /* ViewController.swift */,
+				F8A801E3216766C7002BD933 /* Assets.xcassets */,
+				F8A801E5216766C7002BD933 /* LaunchScreen.storyboard */,
+				F8A801E8216766C7002BD933 /* Info.plist */,
+				F8A801F12167670A002BD933 /* HomeViewController.swift */,
+				F8A802052167677D002BD933 /* Main.storyboard */,
+			);
+			path = RatingDay;
+			sourceTree = "<group>";
+		};
+		F8A80207216767AB002BD933 /* Starter */ = {
+			isa = PBXGroup;
+			children = (
+				F8A801F72167670A002BD933 /* LoginViewController.swift */,
+				F8A801FA2167670A002BD933 /* RegisterViewController.swift */,
+			);
+			name = Starter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8A801D8216766C5002BD933 /* RatingDay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A801EB216766C7002BD933 /* Build configuration list for PBXNativeTarget "RatingDay" */;
+			buildPhases = (
+				4D2D7DABD4C3F3460B42727D /* [CP] Check Pods Manifest.lock */,
+				F8A801D5216766C5002BD933 /* Sources */,
+				F8A801D6216766C5002BD933 /* Frameworks */,
+				F8A801D7216766C5002BD933 /* Resources */,
+				97D31ED7AEF470B0FC30FA98 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RatingDay;
+			productName = RatingDay;
+			productReference = F8A801D9216766C5002BD933 /* RatingDay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8A801D1216766C5002BD933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Tzu-Yen Huang";
+				TargetAttributes = {
+					F8A801D8216766C5002BD933 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+					};
+				};
+			};
+			buildConfigurationList = F8A801D4216766C5002BD933 /* Build configuration list for PBXProject "RatingDay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8A801D0216766C5002BD933;
+			productRefGroup = F8A801DA216766C5002BD933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8A801D8216766C5002BD933 /* RatingDay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8A801D7216766C5002BD933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A801E7216766C7002BD933 /* LaunchScreen.storyboard in Resources */,
+				F8A801E4216766C7002BD933 /* Assets.xcassets in Resources */,
+				F8A802002167670A002BD933 /* head.png in Resources */,
+				F8826044216C4E1500801743 /* restaurant.sqlite in Resources */,
+				F8A802062167677D002BD933 /* Main.storyboard in Resources */,
+				F8826049216D9D3500801743 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D2D7DABD4C3F3460B42727D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RatingDay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97D31ED7AEF470B0FC30FA98 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RatingDay/Pods-RatingDay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RatingDay/Pods-RatingDay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8A801D5216766C5002BD933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8826047216D959F00801743 /* CollectionViewController.swift in Sources */,
+				F882603D216B603100801743 /* Restaurant.swift in Sources */,
+				F8826033216B5F2600801743 /* FMResultSet.m in Sources */,
+				F8826035216B5F2600801743 /* FMDatabaseQueue.m in Sources */,
+				F8A802042167670A002BD933 /* RegisterViewController.swift in Sources */,
+				F8826037216B5F2600801743 /* FMDatabase.m in Sources */,
+				F8A801DF216766C5002BD933 /* ViewController.swift in Sources */,
+				F8826036216B5F2600801743 /* FMDatabasePool.m in Sources */,
+				F882603F216B604700801743 /* RestaurantDAO.swift in Sources */,
+				F8A801DD216766C5002BD933 /* AppDelegate.swift in Sources */,
+				F8A802012167670A002BD933 /* LoginViewController.swift in Sources */,
+				F8826034216B5F2600801743 /* FMDatabaseAdditions.m in Sources */,
+				F8A801FD2167670A002BD933 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F8A801E5216766C7002BD933 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A801E6216766C7002BD933 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8A801E9216766C7002BD933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8A801EA216766C7002BD933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F8A801EC216766C7002BD933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B207CB2F0A0322D80E3A407 /* Pods-RatingDay.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RatingDay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TzuYenHuang.RatingDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RatingDay/RatingDay-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8A801ED216766C7002BD933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA76D3158E7CBB27E17793A3 /* Pods-RatingDay.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RatingDay/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.TzuYenHuang.RatingDay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RatingDay/RatingDay-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8A801D4216766C5002BD933 /* Build configuration list for PBXProject "RatingDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A801E9216766C7002BD933 /* Debug */,
+				F8A801EA216766C7002BD933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A801EB216766C7002BD933 /* Build configuration list for PBXNativeTarget "RatingDay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A801EC216766C7002BD933 /* Debug */,
+				F8A801ED216766C7002BD933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8A801D1216766C5002BD933 /* Project object */;
+}

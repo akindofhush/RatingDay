@@ -1,0 +1,6 @@
+framework module Pods_RatingDay {
+  umbrella header "Pods-RatingDay-umbrella.h"
+
+  export *
+  module * { export * }
+}
