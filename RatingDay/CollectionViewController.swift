@@ -17,10 +17,9 @@ class CollectionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    func addData(rateName:String,dayRating:Double,dayReview:String){
-        var ref: DocumentReference? = nil
+    func setData(rateName:String,dayRating:Double,dayReview:String){
         let fbDb = Firestore.firestore()
-        ref = fbDb.collection("ChIJGTcKOW6sQjQRFOYp_8ce8yM").addDocument(data: [
+        fbDb.collection("rating").document("ChIJGTcKOW6sQjQRFOYp_8ce8yM").setData([
         "rateName":rateName,
         "dayRating": dayRating,
         "dayReview": dayReview
@@ -28,7 +27,7 @@ class CollectionViewController: UIViewController {
         if let err = err {
             print("Error adding document: \(err)")
         } else {
-            print("Document added with ID: \(ref!.documentID)")
+            print("Document successfully written!")
         }
         }
     }
