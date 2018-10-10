@@ -44,4 +44,15 @@ class CollectionViewController: UIViewController {
             }
         }
     }
+    func deleteData(){
+        let fbDb = Firestore.firestore()
+        fbDb.collection("ChIJGTcKOW6sQjQRFOYp_8ce8yM").document("I0YOURVXOuZiDb6wTD9G").delete() { err in
+            if let err = err {
+                print("Error removing document: \(err)")
+            } else {
+                print("Document successfully removed!")
+            }
+        }
+    }
+    
 }
