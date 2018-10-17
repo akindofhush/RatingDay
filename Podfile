@@ -8,5 +8,7 @@ target 'RatingDay' do
   # Pods for RatingDay
   pod 'Firebase/Core'
   pod 'Firebase/Firestore'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
   
 end

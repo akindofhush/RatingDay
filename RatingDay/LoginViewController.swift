@@ -14,6 +14,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet var password: UITextField!
     @IBOutlet var alert: UILabel!
     @IBOutlet var switchStatus: UISwitch!
+    //var googleReviewData = [[String : Any]]()
     
     let ud = UserDefaults.standard
     @IBAction func login(_ sender: UIButton) {
@@ -54,19 +55,22 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             switchStatus.setOn(true, animated: false)
             account.text = ud.string(forKey: "USEREMAIL")
             password.text = ud.string(forKey: "USERPASSWORD")
-          
-        //Testing Place
-            //let path = RestaurantDAO.dbPath
-//            let test = CollectionViewController()
-//            test.addData(rateName: "Jack", dayRating: 4.5, dayReview: "NicePlace")
-//            test.getData()
-            
-//            let list = RestaurantDAO.getAllRestaurant()
-//            print (list)
-            
         }
-
+//Testing Place
+//        let test = ReviewViewController()
+//        print("settingData")
+//        test.setRatingData(placeId: "ChIJGTcKOW6sQjQRFOYp_8ce8yM", email: "aa@hotmail.com", dayRating: 4.0, dayReview: "Good!")
+//        test.setRatingData(placeId: "ChIJGTcKOW6sQjQRFOYp_8ce8yM", email: "bb@hotmail.com", dayRating: 4.3, dayReview: "Nice!")
+        
+//        GetGoogleReviews.setGoogleReviews(placeId: "ChIJGTcKOW6sQjQRFOYp_8ce8yM", completion: {(data,error) in
+//           if let data = data{
+//                self.googleReviewData = data
+//            }
+//        })
+        
+        
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
     }

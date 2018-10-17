@@ -22,5 +22,5 @@ struct Restaurant{
     
     //firebase
     var likeNum = 0
-    var dayRating = 0.0
+    var dayRating:Double?
 }

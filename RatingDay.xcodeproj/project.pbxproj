@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		86767F72C006D9D05CAF7909 /* Pods_RatingDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75E5851E4B806173CF9E1012 /* Pods_RatingDay.framework */; };
+		F87D47BD2173360900C9392C /* GetGoogleReviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D47BC2173360900C9392C /* GetGoogleReviews.swift */; };
+		F87D48052175DCF500C9392C /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D48042175DCF500C9392C /* ReviewTableViewCell.swift */; };
+		F87D48072177204400C9392C /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D48062177204400C9392C /* GoogleMapViewController.swift */; };
+		F87D48092177249700C9392C /* connectmap.png in Resources */ = {isa = PBXBuildFile; fileRef = F87D48082177249700C9392C /* connectmap.png */; };
 		F8826033216B5F2600801743 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826028216B5F2600801743 /* FMResultSet.m */; };
 		F8826034216B5F2600801743 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826029216B5F2600801743 /* FMDatabaseAdditions.m */; };
 		F8826035216B5F2600801743 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F882602D216B5F2600801743 /* FMDatabaseQueue.m */; };
@@ -17,13 +21,26 @@
 		F882603D216B603100801743 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882603C216B603100801743 /* Restaurant.swift */; };
 		F882603F216B604700801743 /* RestaurantDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882603E216B604700801743 /* RestaurantDAO.swift */; };
 		F8826044216C4E1500801743 /* restaurant.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F8826043216C4E1500801743 /* restaurant.sqlite */; };
-		F8826047216D959F00801743 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826046216D959F00801743 /* CollectionViewController.swift */; };
+		F8826047216D959F00801743 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826046216D959F00801743 /* ReviewViewController.swift */; };
 		F8826049216D9D3500801743 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8826048216D9D3500801743 /* GoogleService-Info.plist */; };
+		F8826052216F9C7D00801743 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826051216F9C7D00801743 /* HomeTableViewCell.swift */; };
+		F88260562170596700801743 /* emptystar.png in Resources */ = {isa = PBXBuildFile; fileRef = F88260532170596300801743 /* emptystar.png */; };
+		F88260572170596700801743 /* fullstar.png in Resources */ = {isa = PBXBuildFile; fileRef = F88260542170596500801743 /* fullstar.png */; };
+		F88260582170596700801743 /* halfstar.png in Resources */ = {isa = PBXBuildFile; fileRef = F88260552170596700801743 /* halfstar.png */; };
+		F882605A217059E500801743 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = F8826059217059E400801743 /* photo.png */; };
+		F882605C21705A7F00801743 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882605B21705A7F00801743 /* ContentViewController.swift */; };
+		F882606021709E7E00801743 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882605F21709E7E00801743 /* HomeViewController.swift */; };
+		F88260622170B61900801743 /* Rating.swift in Sources */ = {isa = PBXBuildFile; fileRef = F88260612170B61900801743 /* Rating.swift */; };
+		F882606A217219FC00801743 /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = F8826069217219FC00801743 /* home.png */; };
+		F882606D21721A9100801743 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = F882606B21721A8F00801743 /* profile.png */; };
+		F882606E21721A9100801743 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = F882606C21721A9100801743 /* location.png */; };
+		F88260722172412C00801743 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = F882606F2172412700801743 /* share.png */; };
+		F88260732172412C00801743 /* emptylove.png in Resources */ = {isa = PBXBuildFile; fileRef = F88260702172412900801743 /* emptylove.png */; };
+		F88260742172412C00801743 /* fulllove.png in Resources */ = {isa = PBXBuildFile; fileRef = F88260712172412C00801743 /* fulllove.png */; };
 		F8A801DD216766C5002BD933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801DC216766C5002BD933 /* AppDelegate.swift */; };
 		F8A801DF216766C5002BD933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801DE216766C5002BD933 /* ViewController.swift */; };
 		F8A801E4216766C7002BD933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A801E3216766C7002BD933 /* Assets.xcassets */; };
 		F8A801E7216766C7002BD933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A801E5216766C7002BD933 /* LaunchScreen.storyboard */; };
-		F8A801FD2167670A002BD933 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801F12167670A002BD933 /* HomeViewController.swift */; };
 		F8A802002167670A002BD933 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A801F62167670A002BD933 /* head.png */; };
 		F8A802012167670A002BD933 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801F72167670A002BD933 /* LoginViewController.swift */; };
 		F8A802042167670A002BD933 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801FA2167670A002BD933 /* RegisterViewController.swift */; };
@@ -34,6 +51,10 @@
 		2B207CB2F0A0322D80E3A407 /* Pods-RatingDay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RatingDay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RatingDay/Pods-RatingDay.debug.xcconfig"; sourceTree = "<group>"; };
 		75E5851E4B806173CF9E1012 /* Pods_RatingDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RatingDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA76D3158E7CBB27E17793A3 /* Pods-RatingDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RatingDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-RatingDay/Pods-RatingDay.release.xcconfig"; sourceTree = "<group>"; };
+		F87D47BC2173360900C9392C /* GetGoogleReviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetGoogleReviews.swift; sourceTree = "<group>"; };
+		F87D48042175DCF500C9392C /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
+		F87D48062177204400C9392C /* GoogleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
+		F87D48082177249700C9392C /* connectmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connectmap.png; sourceTree = "<group>"; };
 		F8826027216B5F2400801743 /* RatingDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RatingDay-Bridging-Header.h"; sourceTree = "<group>"; };
 		F8826028216B5F2600801743 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		F8826029216B5F2600801743 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
@@ -50,15 +71,28 @@
 		F882603C216B603100801743 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F882603E216B604700801743 /* RestaurantDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDAO.swift; sourceTree = "<group>"; };
 		F8826043216C4E1500801743 /* restaurant.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = restaurant.sqlite; sourceTree = "<group>"; };
-		F8826046216D959F00801743 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		F8826046216D959F00801743 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		F8826048216D9D3500801743 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F8826051216F9C7D00801743 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		F88260532170596300801743 /* emptystar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptystar.png; sourceTree = "<group>"; };
+		F88260542170596500801743 /* fullstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fullstar.png; sourceTree = "<group>"; };
+		F88260552170596700801743 /* halfstar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = halfstar.png; sourceTree = "<group>"; };
+		F8826059217059E400801743 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
+		F882605B21705A7F00801743 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		F882605F21709E7E00801743 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F88260612170B61900801743 /* Rating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rating.swift; sourceTree = "<group>"; };
+		F8826069217219FC00801743 /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = home.png; sourceTree = "<group>"; };
+		F882606B21721A8F00801743 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		F882606C21721A9100801743 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		F882606F2172412700801743 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
+		F88260702172412900801743 /* emptylove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = emptylove.png; sourceTree = "<group>"; };
+		F88260712172412C00801743 /* fulllove.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fulllove.png; sourceTree = "<group>"; };
 		F8A801D9216766C5002BD933 /* RatingDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RatingDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8A801DC216766C5002BD933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8A801DE216766C5002BD933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F8A801E3216766C7002BD933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F8A801E6216766C7002BD933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F8A801E8216766C7002BD933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F8A801F12167670A002BD933 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F8A801F62167670A002BD933 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
 		F8A801F72167670A002BD933 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F8A801FA2167670A002BD933 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -90,7 +124,18 @@
 		F8825FFF2167688900801743 /* Pic */ = {
 			isa = PBXGroup;
 			children = (
+				F87D48082177249700C9392C /* connectmap.png */,
+				F8826059217059E400801743 /* photo.png */,
 				F8A801F62167670A002BD933 /* head.png */,
+				F88260532170596300801743 /* emptystar.png */,
+				F88260542170596500801743 /* fullstar.png */,
+				F88260552170596700801743 /* halfstar.png */,
+				F8826069217219FC00801743 /* home.png */,
+				F882606C21721A9100801743 /* location.png */,
+				F882606B21721A8F00801743 /* profile.png */,
+				F88260702172412900801743 /* emptylove.png */,
+				F88260712172412C00801743 /* fulllove.png */,
+				F882606F2172412700801743 /* share.png */,
 			);
 			name = Pic;
 			sourceTree = "<group>";
@@ -128,6 +173,8 @@
 			children = (
 				F882603C216B603100801743 /* Restaurant.swift */,
 				F882603E216B604700801743 /* RestaurantDAO.swift */,
+				F88260612170B61900801743 /* Rating.swift */,
+				F87D47BC2173360900C9392C /* GetGoogleReviews.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -143,9 +190,21 @@
 		F8826045216D956300801743 /* profile */ = {
 			isa = PBXGroup;
 			children = (
-				F8826046216D959F00801743 /* CollectionViewController.swift */,
+				F8826046216D959F00801743 /* ReviewViewController.swift */,
 			);
 			name = profile;
+			sourceTree = "<group>";
+		};
+		F8826050216F9C3600801743 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				F882605F21709E7E00801743 /* HomeViewController.swift */,
+				F8826051216F9C7D00801743 /* HomeTableViewCell.swift */,
+				F882605B21705A7F00801743 /* ContentViewController.swift */,
+				F87D48042175DCF500C9392C /* ReviewTableViewCell.swift */,
+				F87D48062177204400C9392C /* GoogleMapViewController.swift */,
+			);
+			name = main;
 			sourceTree = "<group>";
 		};
 		F8A801D0216766C5002BD933 = {
@@ -170,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				F8826048216D9D3500801743 /* GoogleService-Info.plist */,
+				F8826050216F9C3600801743 /* main */,
 				F8826045216D956300801743 /* profile */,
 				F8826042216C36B900801743 /* db */,
 				F882603B216B601300801743 /* model */,
@@ -181,7 +241,6 @@
 				F8A801E3216766C7002BD933 /* Assets.xcassets */,
 				F8A801E5216766C7002BD933 /* LaunchScreen.storyboard */,
 				F8A801E8216766C7002BD933 /* Info.plist */,
-				F8A801F12167670A002BD933 /* HomeViewController.swift */,
 				F8A802052167677D002BD933 /* Main.storyboard */,
 			);
 			path = RatingDay;
@@ -208,6 +267,7 @@
 				F8A801D6216766C5002BD933 /* Frameworks */,
 				F8A801D7216766C5002BD933 /* Resources */,
 				97D31ED7AEF470B0FC30FA98 /* [CP] Embed Pods Frameworks */,
+				46A60E2D4327B09FE314A50F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,11 +317,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F87D48092177249700C9392C /* connectmap.png in Resources */,
 				F8A801E7216766C7002BD933 /* LaunchScreen.storyboard in Resources */,
+				F88260582170596700801743 /* halfstar.png in Resources */,
+				F882606A217219FC00801743 /* home.png in Resources */,
+				F88260722172412C00801743 /* share.png in Resources */,
+				F882605A217059E500801743 /* photo.png in Resources */,
 				F8A801E4216766C7002BD933 /* Assets.xcassets in Resources */,
 				F8A802002167670A002BD933 /* head.png in Resources */,
+				F88260562170596700801743 /* emptystar.png in Resources */,
+				F88260742172412C00801743 /* fulllove.png in Resources */,
+				F882606D21721A9100801743 /* profile.png in Resources */,
+				F88260732172412C00801743 /* emptylove.png in Resources */,
+				F88260572170596700801743 /* fullstar.png in Resources */,
 				F8826044216C4E1500801743 /* restaurant.sqlite in Resources */,
 				F8A802062167677D002BD933 /* Main.storyboard in Resources */,
+				F882606E21721A9100801743 /* location.png in Resources */,
 				F8826049216D9D3500801743 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +340,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		46A60E2D4327B09FE314A50F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RatingDay/Pods-RatingDay-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RatingDay/Pods-RatingDay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4D2D7DABD4C3F3460B42727D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,19 +433,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8826047216D959F00801743 /* CollectionViewController.swift in Sources */,
+				F8826047216D959F00801743 /* ReviewViewController.swift in Sources */,
 				F882603D216B603100801743 /* Restaurant.swift in Sources */,
+				F882606021709E7E00801743 /* HomeViewController.swift in Sources */,
+				F8826052216F9C7D00801743 /* HomeTableViewCell.swift in Sources */,
 				F8826033216B5F2600801743 /* FMResultSet.m in Sources */,
 				F8826035216B5F2600801743 /* FMDatabaseQueue.m in Sources */,
 				F8A802042167670A002BD933 /* RegisterViewController.swift in Sources */,
+				F87D48052175DCF500C9392C /* ReviewTableViewCell.swift in Sources */,
 				F8826037216B5F2600801743 /* FMDatabase.m in Sources */,
+				F87D47BD2173360900C9392C /* GetGoogleReviews.swift in Sources */,
 				F8A801DF216766C5002BD933 /* ViewController.swift in Sources */,
 				F8826036216B5F2600801743 /* FMDatabasePool.m in Sources */,
 				F882603F216B604700801743 /* RestaurantDAO.swift in Sources */,
+				F882605C21705A7F00801743 /* ContentViewController.swift in Sources */,
+				F88260622170B61900801743 /* Rating.swift in Sources */,
 				F8A801DD216766C5002BD933 /* AppDelegate.swift in Sources */,
 				F8A802012167670A002BD933 /* LoginViewController.swift in Sources */,
 				F8826034216B5F2600801743 /* FMDatabaseAdditions.m in Sources */,
-				F8A801FD2167670A002BD933 /* HomeViewController.swift in Sources */,
+				F87D48072177204400C9392C /* GoogleMapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
