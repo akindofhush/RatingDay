@@ -23,27 +23,9 @@ class GoogleMapViewController: UIViewController,CLLocationManagerDelegate {
 
     @IBOutlet var mapView: GMSMapView!
     
-//    func locationManager(manager: CLLocationManager,didUpdateLocations locations: [CLLocation]) {
-//        // 印出目前所在位置座標
-//        let currentLocation :CLLocation = locations[0] as CLLocation
-//        print("\(currentLocation.coordinate.latitude)")
-//        print(", \(currentLocation.coordinate.longitude)")
-//
-//    }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        //init LocationManager
-//        locationManager = CLLocationManager()
-//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-//        locationManager.requestAlwaysAuthorization()
-//        locationManager.distanceFilter = 50
-//        locationManager.startUpdatingLocation()
-//        locationManager.delegate = self
-//
-//        placesClient = GMSPlacesClient.shared()
-        
         current = RestaurantDAO.getResByPlaceId(placeId: placeId)!
         let camera = GMSCameraPosition.camera(withLatitude: current.lat, longitude: current.lng, zoom: 16.0)
         mapView.camera = camera

@@ -116,7 +116,8 @@ class ContentViewController: UIViewController,UITableViewDelegate,UITableViewDat
         favorite.isUserInteractionEnabled = true
         favorite.addGestureRecognizer(tapGestureRecognizer)
         
-        //設定畫面初始值
+        
+        //設定畫面初始值,用placeId找出餐廳單筆資訊
         current = RestaurantDAO.getResByPlaceId(placeId: placeId)!
         if let data = current.photo{
             resPic.image = UIImage(data: data)

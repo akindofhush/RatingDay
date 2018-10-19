@@ -22,8 +22,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let password = ud.string(forKey: "USERPASSWORD")
         if account.text == email && self.password.text == password{
             //jump to specific page
-            if let controller = storyboard?.instantiateViewController(withIdentifier: "Page1"){
-                self.navigationController?.pushViewController(controller, animated: true)
+            if let controller = storyboard?.instantiateViewController(withIdentifier: "Navi"){
+                present(controller, animated: true, completion: nil)
             }
             if switchStatus.isOn {
                 ud.set(true, forKey: "SWITCH")

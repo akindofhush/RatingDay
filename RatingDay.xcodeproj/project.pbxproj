@@ -13,6 +13,7 @@
 		F87D48072177204400C9392C /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D48062177204400C9392C /* GoogleMapViewController.swift */; };
 		F87D48092177249700C9392C /* connectmap.png in Resources */ = {isa = PBXBuildFile; fileRef = F87D48082177249700C9392C /* connectmap.png */; };
 		F87D480D21787A5200C9392C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D480C21787A5200C9392C /* MapViewController.swift */; };
+		F87D480F2179848700C9392C /* navigation.png in Resources */ = {isa = PBXBuildFile; fileRef = F87D480E2179848600C9392C /* navigation.png */; };
 		F8826033216B5F2600801743 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826028216B5F2600801743 /* FMResultSet.m */; };
 		F8826034216B5F2600801743 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826029216B5F2600801743 /* FMDatabaseAdditions.m */; };
 		F8826035216B5F2600801743 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F882602D216B5F2600801743 /* FMDatabaseQueue.m */; };
@@ -57,6 +58,7 @@
 		F87D48062177204400C9392C /* GoogleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		F87D48082177249700C9392C /* connectmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connectmap.png; sourceTree = "<group>"; };
 		F87D480C21787A5200C9392C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F87D480E2179848600C9392C /* navigation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation.png; sourceTree = "<group>"; };
 		F8826027216B5F2400801743 /* RatingDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RatingDay-Bridging-Header.h"; sourceTree = "<group>"; };
 		F8826028216B5F2600801743 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		F8826029216B5F2600801743 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		F8825FFF2167688900801743 /* Pic */ = {
 			isa = PBXGroup;
 			children = (
+				F87D480E2179848600C9392C /* navigation.png */,
 				F87D48082177249700C9392C /* connectmap.png */,
 				F8826059217059E400801743 /* photo.png */,
 				F8A801F62167670A002BD933 /* head.png */,
@@ -341,6 +344,7 @@
 				F882606D21721A9100801743 /* profile.png in Resources */,
 				F88260732172412C00801743 /* emptylove.png in Resources */,
 				F88260572170596700801743 /* fullstar.png in Resources */,
+				F87D480F2179848700C9392C /* navigation.png in Resources */,
 				F8826044216C4E1500801743 /* restaurant.sqlite in Resources */,
 				F8A802062167677D002BD933 /* Main.storyboard in Resources */,
 				F882606E21721A9100801743 /* location.png in Resources */,
