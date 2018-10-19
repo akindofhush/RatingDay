@@ -17,8 +17,6 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         tableView.reloadData()
     }
     
-    
-    
     @IBOutlet var search: UISearchBar!
     @IBOutlet var tableView: UITableView!
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -36,7 +34,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         var comRating = 0.0
         if list[indexPath.row].googleRating != 0.0{
             if list[indexPath.row].tripRating != 0.0{
-                comRating = (list[indexPath.row].googleRating + list[indexPath.row].tripRating)/2.0//加上取到小數點後第二位
+                comRating = (list[indexPath.row].googleRating + list[indexPath.row].tripRating)/2.0
             }else{
                 comRating = list[indexPath.row].googleRating
             }
@@ -46,6 +44,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
             }
         }
         cell.rating.text = String(comRating)
+        cell.type.text = list[indexPath.row].type
     Rating.printStarsByRating(rating:comRating,star1:cell.star1,star2:cell.star2,star3:cell.star3,star4:cell.star4,star5:cell.star5)
         
         return cell

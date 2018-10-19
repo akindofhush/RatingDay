@@ -12,6 +12,7 @@
 		F87D48052175DCF500C9392C /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D48042175DCF500C9392C /* ReviewTableViewCell.swift */; };
 		F87D48072177204400C9392C /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D48062177204400C9392C /* GoogleMapViewController.swift */; };
 		F87D48092177249700C9392C /* connectmap.png in Resources */ = {isa = PBXBuildFile; fileRef = F87D48082177249700C9392C /* connectmap.png */; };
+		F87D480D21787A5200C9392C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D480C21787A5200C9392C /* MapViewController.swift */; };
 		F8826033216B5F2600801743 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826028216B5F2600801743 /* FMResultSet.m */; };
 		F8826034216B5F2600801743 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826029216B5F2600801743 /* FMDatabaseAdditions.m */; };
 		F8826035216B5F2600801743 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F882602D216B5F2600801743 /* FMDatabaseQueue.m */; };
@@ -55,6 +56,7 @@
 		F87D48042175DCF500C9392C /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		F87D48062177204400C9392C /* GoogleMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		F87D48082177249700C9392C /* connectmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connectmap.png; sourceTree = "<group>"; };
+		F87D480C21787A5200C9392C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F8826027216B5F2400801743 /* RatingDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RatingDay-Bridging-Header.h"; sourceTree = "<group>"; };
 		F8826028216B5F2600801743 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		F8826029216B5F2600801743 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
@@ -119,6 +121,14 @@
 				AA76D3158E7CBB27E17793A3 /* Pods-RatingDay.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		F87D480B21787A2100C9392C /* mappage */ = {
+			isa = PBXGroup;
+			children = (
+				F87D480C21787A5200C9392C /* MapViewController.swift */,
+			);
+			name = mappage;
 			sourceTree = "<group>";
 		};
 		F8825FFF2167688900801743 /* Pic */ = {
@@ -195,7 +205,7 @@
 			name = profile;
 			sourceTree = "<group>";
 		};
-		F8826050216F9C3600801743 /* main */ = {
+		F8826050216F9C3600801743 /* mainpage */ = {
 			isa = PBXGroup;
 			children = (
 				F882605F21709E7E00801743 /* HomeViewController.swift */,
@@ -204,7 +214,7 @@
 				F87D48042175DCF500C9392C /* ReviewTableViewCell.swift */,
 				F87D48062177204400C9392C /* GoogleMapViewController.swift */,
 			);
-			name = main;
+			name = mainpage;
 			sourceTree = "<group>";
 		};
 		F8A801D0216766C5002BD933 = {
@@ -229,7 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				F8826048216D9D3500801743 /* GoogleService-Info.plist */,
-				F8826050216F9C3600801743 /* main */,
+				F87D480B21787A2100C9392C /* mappage */,
+				F8826050216F9C3600801743 /* mainpage */,
 				F8826045216D956300801743 /* profile */,
 				F8826042216C36B900801743 /* db */,
 				F882603B216B601300801743 /* model */,
@@ -436,6 +447,7 @@
 				F8826047216D959F00801743 /* ReviewViewController.swift in Sources */,
 				F882603D216B603100801743 /* Restaurant.swift in Sources */,
 				F882606021709E7E00801743 /* HomeViewController.swift in Sources */,
+				F87D480D21787A5200C9392C /* MapViewController.swift in Sources */,
 				F8826052216F9C7D00801743 /* HomeTableViewCell.swift in Sources */,
 				F8826033216B5F2600801743 /* FMResultSet.m in Sources */,
 				F8826035216B5F2600801743 /* FMDatabaseQueue.m in Sources */,
