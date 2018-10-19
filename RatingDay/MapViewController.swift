@@ -15,10 +15,9 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
     @IBOutlet var mapView: GMSMapView!
     //google data
     var locationManager = CLLocationManager()
-    var currentLocation: CLLocation?
     var placesClient: GMSPlacesClient!
-    var zoomLevel: Float = 12.0
     var path: GMSMutablePath!
+    var restaurantData = [Restaurant]()
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let c = locations[0] as CLLocation
@@ -27,10 +26,28 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
             CATransaction.begin()
             CATransaction.setValue(Int(2), forKey: kCATransactionAnimationDuration)
             mapView.animate(toLocation: location.coordinate)
-            mapView.animate(toZoom: 12)
+            mapView.animate(toZoom: 16)
             CATransaction.commit()
-            locationManager.stopUpdatingLocation()
+            
+            restaurantData = RestaurantDAO.getAllRestaurant()!
+            for res in restaurantData{
+                if abs(newLocaiton.latitude - res.lat) < 1 && abs(newLocaiton.longitude - res.lng) < 1{
+                    let marker = GMSMarker()
+                    marker.position = CLLocationCoordinate2D(latitude: res.lat, longitude: res.lng)
+                    marker.map = mapView
+                    marker.icon = GMSMarker.markerImage(with: .blue)
+                    marker.title = res.name
+                    marker.snippet = res.address
+                    
+                    
+                }
+            }
         }
+    }
+    
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        locationManager.stopUpdatingLocation()
     }
     
     override func viewDidLoad() {
@@ -43,10 +60,7 @@ class MapViewController: UIViewController,CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         locationManager.delegate = self
         placesClient = GMSPlacesClient.shared()
-
         mapView.mapType = .normal
-        //let defaultCenter = CLLocationCoordinate2D(latitude: -32.725757, longitude: 21.481987)
-        //mapView.camera = GMSCameraPosition(target: defaultCenter, zoom: 1, bearing: 0, viewingAngle: 0)
         mapView.isMyLocationEnabled = true
         
         
