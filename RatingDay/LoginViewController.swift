@@ -67,6 +67,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //                self.googleReviewData = data
 //            }
 //        })
+    let path = RestaurantDAO.dbPath
         
         
     }

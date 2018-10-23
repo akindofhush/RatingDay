@@ -14,6 +14,9 @@
 		F87D48092177249700C9392C /* connectmap.png in Resources */ = {isa = PBXBuildFile; fileRef = F87D48082177249700C9392C /* connectmap.png */; };
 		F87D480D21787A5200C9392C /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D480C21787A5200C9392C /* MapViewController.swift */; };
 		F87D480F2179848700C9392C /* navigation.png in Resources */ = {isa = PBXBuildFile; fileRef = F87D480E2179848600C9392C /* navigation.png */; };
+		F87D48112179C9F000C9392C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F87D48102179C9F000C9392C /* Main.storyboard */; };
+		F87D48132179CB4100C9392C /* edit.png in Resources */ = {isa = PBXBuildFile; fileRef = F87D48122179CB4100C9392C /* edit.png */; };
+		F87D48152179ECEA00C9392C /* AddReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F87D48142179ECEA00C9392C /* AddReviewViewController.swift */; };
 		F8826033216B5F2600801743 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826028216B5F2600801743 /* FMResultSet.m */; };
 		F8826034216B5F2600801743 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F8826029216B5F2600801743 /* FMDatabaseAdditions.m */; };
 		F8826035216B5F2600801743 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F882602D216B5F2600801743 /* FMDatabaseQueue.m */; };
@@ -22,7 +25,6 @@
 		F882603A216B5FF000801743 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8826039216B5FF000801743 /* libsqlite3.tbd */; };
 		F882603D216B603100801743 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882603C216B603100801743 /* Restaurant.swift */; };
 		F882603F216B604700801743 /* RestaurantDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F882603E216B604700801743 /* RestaurantDAO.swift */; };
-		F8826044216C4E1500801743 /* restaurant.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F8826043216C4E1500801743 /* restaurant.sqlite */; };
 		F8826047216D959F00801743 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826046216D959F00801743 /* ReviewViewController.swift */; };
 		F8826049216D9D3500801743 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8826048216D9D3500801743 /* GoogleService-Info.plist */; };
 		F8826052216F9C7D00801743 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8826051216F9C7D00801743 /* HomeTableViewCell.swift */; };
@@ -46,7 +48,16 @@
 		F8A802002167670A002BD933 /* head.png in Resources */ = {isa = PBXBuildFile; fileRef = F8A801F62167670A002BD933 /* head.png */; };
 		F8A802012167670A002BD933 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801F72167670A002BD933 /* LoginViewController.swift */; };
 		F8A802042167670A002BD933 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A801FA2167670A002BD933 /* RegisterViewController.swift */; };
-		F8A802062167677D002BD933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8A802052167677D002BD933 /* Main.storyboard */; };
+		F8E3511A217C6FB600440AF8 /* restaurant.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = F8E35119217C6FB600440AF8 /* restaurant.sqlite */; };
+		F8E3512D217F15BC00440AF8 /* 日韓.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E35127217F15B700440AF8 /* 日韓.png */; };
+		F8E3512E217F15BC00440AF8 /* 泰式.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E35128217F15B800440AF8 /* 泰式.png */; };
+		F8E3512F217F15BC00440AF8 /* 中式.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E35129217F15B900440AF8 /* 中式.png */; };
+		F8E35130217F15BC00440AF8 /* 義式.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E3512A217F15BA00440AF8 /* 義式.png */; };
+		F8E35131217F15BC00440AF8 /* 美式.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E3512B217F15BA00440AF8 /* 美式.png */; };
+		F8E35132217F15BC00440AF8 /* 其他.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E3512C217F15BB00440AF8 /* 其他.png */; };
+		F8E35134217F171700440AF8 /* TypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E35133217F171700440AF8 /* TypeViewController.swift */; };
+		F8E35138217F23F100440AF8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E35137217F23F100440AF8 /* TableViewController.swift */; };
+		F8E3513A217F243400440AF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E35139217F243400440AF8 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +70,9 @@
 		F87D48082177249700C9392C /* connectmap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = connectmap.png; sourceTree = "<group>"; };
 		F87D480C21787A5200C9392C /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F87D480E2179848600C9392C /* navigation.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navigation.png; sourceTree = "<group>"; };
+		F87D48102179C9F000C9392C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F87D48122179CB4100C9392C /* edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = edit.png; sourceTree = "<group>"; };
+		F87D48142179ECEA00C9392C /* AddReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewViewController.swift; sourceTree = "<group>"; };
 		F8826027216B5F2400801743 /* RatingDay-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RatingDay-Bridging-Header.h"; sourceTree = "<group>"; };
 		F8826028216B5F2600801743 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		F8826029216B5F2600801743 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
@@ -74,7 +88,6 @@
 		F8826039216B5FF000801743 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		F882603C216B603100801743 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F882603E216B604700801743 /* RestaurantDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDAO.swift; sourceTree = "<group>"; };
-		F8826043216C4E1500801743 /* restaurant.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = restaurant.sqlite; sourceTree = "<group>"; };
 		F8826046216D959F00801743 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		F8826048216D9D3500801743 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F8826051216F9C7D00801743 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
@@ -100,7 +113,16 @@
 		F8A801F62167670A002BD933 /* head.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = head.png; sourceTree = "<group>"; };
 		F8A801F72167670A002BD933 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F8A801FA2167670A002BD933 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		F8A802052167677D002BD933 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F8E35119217C6FB600440AF8 /* restaurant.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = restaurant.sqlite; sourceTree = "<group>"; };
+		F8E35127217F15B700440AF8 /* 日韓.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "日韓.png"; sourceTree = "<group>"; };
+		F8E35128217F15B800440AF8 /* 泰式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "泰式.png"; sourceTree = "<group>"; };
+		F8E35129217F15B900440AF8 /* 中式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "中式.png"; sourceTree = "<group>"; };
+		F8E3512A217F15BA00440AF8 /* 義式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "義式.png"; sourceTree = "<group>"; };
+		F8E3512B217F15BA00440AF8 /* 美式.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "美式.png"; sourceTree = "<group>"; };
+		F8E3512C217F15BB00440AF8 /* 其他.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "其他.png"; sourceTree = "<group>"; };
+		F8E35133217F171700440AF8 /* TypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewController.swift; sourceTree = "<group>"; };
+		F8E35137217F23F100440AF8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		F8E35139217F243400440AF8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +158,13 @@
 		F8825FFF2167688900801743 /* Pic */ = {
 			isa = PBXGroup;
 			children = (
+				F8E35129217F15B900440AF8 /* 中式.png */,
+				F8E35127217F15B700440AF8 /* 日韓.png */,
+				F8E3512C217F15BB00440AF8 /* 其他.png */,
+				F8E3512B217F15BA00440AF8 /* 美式.png */,
+				F8E35128217F15B800440AF8 /* 泰式.png */,
+				F8E3512A217F15BA00440AF8 /* 義式.png */,
+				F87D48122179CB4100C9392C /* edit.png */,
 				F87D480E2179848600C9392C /* navigation.png */,
 				F87D48082177249700C9392C /* connectmap.png */,
 				F8826059217059E400801743 /* photo.png */,
@@ -195,17 +224,17 @@
 		F8826042216C36B900801743 /* db */ = {
 			isa = PBXGroup;
 			children = (
-				F8826043216C4E1500801743 /* restaurant.sqlite */,
+				F8E35119217C6FB600440AF8 /* restaurant.sqlite */,
 			);
 			name = db;
 			sourceTree = "<group>";
 		};
-		F8826045216D956300801743 /* profile */ = {
+		F8826045216D956300801743 /* profilepage */ = {
 			isa = PBXGroup;
 			children = (
 				F8826046216D959F00801743 /* ReviewViewController.swift */,
 			);
-			name = profile;
+			name = profilepage;
 			sourceTree = "<group>";
 		};
 		F8826050216F9C3600801743 /* mainpage */ = {
@@ -216,6 +245,10 @@
 				F882605B21705A7F00801743 /* ContentViewController.swift */,
 				F87D48042175DCF500C9392C /* ReviewTableViewCell.swift */,
 				F87D48062177204400C9392C /* GoogleMapViewController.swift */,
+				F87D48142179ECEA00C9392C /* AddReviewViewController.swift */,
+				F8E35133217F171700440AF8 /* TypeViewController.swift */,
+				F8E35137217F23F100440AF8 /* TableViewController.swift */,
+				F8E35139217F243400440AF8 /* TableViewCell.swift */,
 			);
 			name = mainpage;
 			sourceTree = "<group>";
@@ -244,7 +277,7 @@
 				F8826048216D9D3500801743 /* GoogleService-Info.plist */,
 				F87D480B21787A2100C9392C /* mappage */,
 				F8826050216F9C3600801743 /* mainpage */,
-				F8826045216D956300801743 /* profile */,
+				F8826045216D956300801743 /* profilepage */,
 				F8826042216C36B900801743 /* db */,
 				F882603B216B601300801743 /* model */,
 				F8826026216B5F0700801743 /* fmdb */,
@@ -255,7 +288,7 @@
 				F8A801E3216766C7002BD933 /* Assets.xcassets */,
 				F8A801E5216766C7002BD933 /* LaunchScreen.storyboard */,
 				F8A801E8216766C7002BD933 /* Info.plist */,
-				F8A802052167677D002BD933 /* Main.storyboard */,
+				F87D48102179C9F000C9392C /* Main.storyboard */,
 			);
 			path = RatingDay;
 			sourceTree = "<group>";
@@ -331,23 +364,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E3511A217C6FB600440AF8 /* restaurant.sqlite in Resources */,
 				F87D48092177249700C9392C /* connectmap.png in Resources */,
 				F8A801E7216766C7002BD933 /* LaunchScreen.storyboard in Resources */,
+				F8E3512F217F15BC00440AF8 /* 中式.png in Resources */,
 				F88260582170596700801743 /* halfstar.png in Resources */,
+				F8E3512E217F15BC00440AF8 /* 泰式.png in Resources */,
 				F882606A217219FC00801743 /* home.png in Resources */,
+				F8E35130217F15BC00440AF8 /* 義式.png in Resources */,
+				F8E3512D217F15BC00440AF8 /* 日韓.png in Resources */,
 				F88260722172412C00801743 /* share.png in Resources */,
 				F882605A217059E500801743 /* photo.png in Resources */,
 				F8A801E4216766C7002BD933 /* Assets.xcassets in Resources */,
+				F87D48112179C9F000C9392C /* Main.storyboard in Resources */,
 				F8A802002167670A002BD933 /* head.png in Resources */,
 				F88260562170596700801743 /* emptystar.png in Resources */,
+				F8E35132217F15BC00440AF8 /* 其他.png in Resources */,
 				F88260742172412C00801743 /* fulllove.png in Resources */,
 				F882606D21721A9100801743 /* profile.png in Resources */,
+				F87D48132179CB4100C9392C /* edit.png in Resources */,
 				F88260732172412C00801743 /* emptylove.png in Resources */,
 				F88260572170596700801743 /* fullstar.png in Resources */,
 				F87D480F2179848700C9392C /* navigation.png in Resources */,
-				F8826044216C4E1500801743 /* restaurant.sqlite in Resources */,
-				F8A802062167677D002BD933 /* Main.storyboard in Resources */,
 				F882606E21721A9100801743 /* location.png in Resources */,
+				F8E35131217F15BC00440AF8 /* 美式.png in Resources */,
 				F8826049216D9D3500801743 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,19 +488,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E35138217F23F100440AF8 /* TableViewController.swift in Sources */,
 				F8826047216D959F00801743 /* ReviewViewController.swift in Sources */,
 				F882603D216B603100801743 /* Restaurant.swift in Sources */,
 				F882606021709E7E00801743 /* HomeViewController.swift in Sources */,
 				F87D480D21787A5200C9392C /* MapViewController.swift in Sources */,
 				F8826052216F9C7D00801743 /* HomeTableViewCell.swift in Sources */,
 				F8826033216B5F2600801743 /* FMResultSet.m in Sources */,
+				F87D48152179ECEA00C9392C /* AddReviewViewController.swift in Sources */,
 				F8826035216B5F2600801743 /* FMDatabaseQueue.m in Sources */,
+				F8E3513A217F243400440AF8 /* TableViewCell.swift in Sources */,
 				F8A802042167670A002BD933 /* RegisterViewController.swift in Sources */,
 				F87D48052175DCF500C9392C /* ReviewTableViewCell.swift in Sources */,
 				F8826037216B5F2600801743 /* FMDatabase.m in Sources */,
 				F87D47BD2173360900C9392C /* GetGoogleReviews.swift in Sources */,
 				F8A801DF216766C5002BD933 /* ViewController.swift in Sources */,
 				F8826036216B5F2600801743 /* FMDatabasePool.m in Sources */,
+				F8E35134217F171700440AF8 /* TypeViewController.swift in Sources */,
 				F882603F216B604700801743 /* RestaurantDAO.swift in Sources */,
 				F882605C21705A7F00801743 /* ContentViewController.swift in Sources */,
 				F88260622170B61900801743 /* Rating.swift in Sources */,

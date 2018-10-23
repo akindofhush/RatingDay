@@ -18,16 +18,15 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,GMSMapViewDe
     var placesClient: GMSPlacesClient!
     var path: GMSMutablePath!
     var restaurantData = [Restaurant]()
+    var newLocaiton: CLLocationCoordinate2D!
     
-    @IBAction func backToLocation(_ sender: UIButton) {
-        
-        
-        
+    @objc func handleTap(_ sender: UIButton) {
+        mapView.camera = GMSCameraPosition(target:newLocaiton , zoom: 16, bearing: 0, viewingAngle: 0)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let c = locations[0] as CLLocation
-        let newLocaiton = CLLocationCoordinate2D(latitude: c.coordinate.latitude, longitude: c.coordinate.longitude)
+        newLocaiton = CLLocationCoordinate2D(latitude: c.coordinate.latitude, longitude: c.coordinate.longitude)
         
         mapView.camera = GMSCameraPosition(target: newLocaiton, zoom: 16, bearing: 0, viewingAngle: 0)
             
@@ -39,8 +38,6 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,GMSMapViewDe
                     marker.map = mapView
                     marker.snippet = res.address
                     marker.accessibilityLabel = res.placeId
-                    
-                    
                     
                     var comRating = 0.0
                     if res.googleRating != 0.0{
@@ -70,11 +67,12 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,GMSMapViewDe
         }
     }
     
-    //跳轉到內容頁,並傳placeId到內容頁
+    //跳轉到ContentViewController,並傳placeId的值
     func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
         if let controller = storyboard?.instantiateViewController(withIdentifier: "Page2") as? ContentViewController{
             controller.placeId = marker.accessibilityLabel!
-            present(controller, animated: true, completion: nil)
+            self.navigationController?.pushViewController(controller, animated: true)
+            //present(controller, animated: true, completion: nil)
         }
     }
     
@@ -96,7 +94,16 @@ class MapViewController: UIViewController,CLLocationManagerDelegate,GMSMapViewDe
         placesClient = GMSPlacesClient.shared()
         mapView.mapType = .normal
         mapView.isMyLocationEnabled = true
+        let size = self.view.bounds.size
+        print ("[\(size.width),\(size.height)]")
         
+        let button = UIButton(frame: CGRect(x: size.width-50, y: size.height-130 ,width: 35, height: 35))
+        
+        if let image = UIImage(named: "navigation") {
+            button.setImage(image, for: .normal)
+        }
+        button.addTarget(self, action: #selector(handleTap), for: .touchUpInside)
+        self.view.addSubview(button)
     }
-
 }
+
