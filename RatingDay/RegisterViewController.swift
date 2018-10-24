@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseStorage
 
 class RegisterViewController: UIViewController,UITextFieldDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate {
 
@@ -40,17 +41,14 @@ class RegisterViewController: UIViewController,UITextFieldDelegate,UIImagePicker
     
     
     @IBAction func confirmBtn(_ sender: UIButton) {
-        
-        let ud = UserDefaults.standard
+        var name:String = ""
+        var email:String = ""
+        var password:String = ""
         var alertStr:String = ""
-        
-        //save imgView.image to userDefaults => save as Data
-        let userImg = imgView.image!.pngData()
-        ud.set(userImg, forKey: "USERIMG")
-
+        let userImg = imgView.image
         
         if nameInput.text?.count != 0{
-            ud.set(nameInput.text, forKey: "USERNAME")
+            name = nameInput.text!
             alertStr.append("")
         }else{
             alertStr.append("請輸入名稱資訊\n")
@@ -58,7 +56,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate,UIImagePicker
         
         if emailInput.text?.count != 0 {
             if emailInput.text!.contains("@"){
-                ud.set(emailInput.text, forKey: "USEREMAIL")
+                email = emailInput.text!
                 alertStr.append("")
             }else{
                 alertStr.append("不合法的Email")
@@ -68,7 +66,7 @@ class RegisterViewController: UIViewController,UITextFieldDelegate,UIImagePicker
         }
         
         if passwordInput.text?.count != 0{
-            ud.set(passwordInput.text, forKey: "USERPASSWORD")
+            password = passwordInput.text!
             alertStr.append("")
         }else {
             alertStr.append("請輸入密碼資訊")
@@ -76,6 +74,25 @@ class RegisterViewController: UIViewController,UITextFieldDelegate,UIImagePicker
         alert.text = alertStr
         if alert.text?.count == 0 {
             self.navigationController?.popViewController(animated: true)?.dismiss(animated: true, completion: nil)
+            Account.setUserInfo(email: email, name: name, password: password)
+        }
+        //將image寫到storage
+        let uniqueString = NSUUID().uuidString
+        if let selectedImage = userImg {
+            let storageRef = Storage.storage().reference().child("userPic").child("\(uniqueString).png")
+            if let uploadData = selectedImage.pngData() {
+                //FirebaseStorage的存取方法
+                storageRef.putData(uploadData, metadata: nil, completion: {(data, error) in
+                    if error != nil {
+                        // 若有接收到錯誤就直接印在Console
+                        print("Error: \(error!.localizedDescription)")
+                        return
+                    }else{
+                        print("complete upload")
+                    }
+                })
+            }
+            
         }
     }
     

@@ -13,7 +13,6 @@ class TypeViewController: UIViewController {
     var list = [Restaurant]()
     @IBAction func chinese(_ sender: UIButton) {
         list = RestaurantDAO.getResByType(type: "中式")!
-        print (list)
     }
     
     @IBAction func american(_ sender: UIButton) {

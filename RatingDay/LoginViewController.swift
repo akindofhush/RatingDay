@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
 
@@ -18,6 +19,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     
     let ud = UserDefaults.standard
     @IBAction func login(_ sender: UIButton) {
+        
         let email = ud.string(forKey: "USEREMAIL")
         let password = ud.string(forKey: "USERPASSWORD")
         if account.text == email && self.password.text == password{
@@ -51,10 +53,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         account.delegate = self
         password.delegate = self
-        if ud.bool(forKey: "SWITCH"){
-            switchStatus.setOn(true, animated: false)
-            account.text = ud.string(forKey: "USEREMAIL")
-            password.text = ud.string(forKey: "USERPASSWORD")
+        
         }
 //Testing Place
 //        let test = ReviewViewController()
@@ -67,10 +66,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 //                self.googleReviewData = data
 //            }
 //        })
-    let path = RestaurantDAO.dbPath
         
         
-    }
+  //  }
     
     override func viewWillAppear(_ animated: Bool) {
         self.navigationController?.navigationBar.isHidden = true
@@ -80,3 +78,4 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.navigationController?.navigationBar.isHidden = false
     }
 }
+

@@ -60,6 +60,9 @@
 		F8E3513A217F243400440AF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E35139217F243400440AF8 /* TableViewCell.swift */; };
 		F8E3513C217F5C0B00440AF8 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E3513B217F5C0B00440AF8 /* AreaViewController.swift */; };
 		F8E3513E217F5C8100440AF8 /* AreaList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E3513D217F5C8100440AF8 /* AreaList.plist */; };
+		F8E35140218030E200440AF8 /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E3513F218030E200440AF8 /* Account.swift */; };
+		F8E351432180812800440AF8 /* type.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E351412180812500440AF8 /* type.png */; };
+		F8E351442180812800440AF8 /* area.png in Resources */ = {isa = PBXBuildFile; fileRef = F8E351422180812700440AF8 /* area.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +130,9 @@
 		F8E35139217F243400440AF8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		F8E3513B217F5C0B00440AF8 /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
 		F8E3513D217F5C8100440AF8 /* AreaList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AreaList.plist; sourceTree = "<group>"; };
+		F8E3513F218030E200440AF8 /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		F8E351412180812500440AF8 /* type.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = type.png; sourceTree = "<group>"; };
+		F8E351422180812700440AF8 /* area.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = area.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +168,8 @@
 		F8825FFF2167688900801743 /* Pic */ = {
 			isa = PBXGroup;
 			children = (
+				F8E351422180812700440AF8 /* area.png */,
+				F8E351412180812500440AF8 /* type.png */,
 				F8E35129217F15B900440AF8 /* 中式.png */,
 				F8E35127217F15B700440AF8 /* 日韓.png */,
 				F8E3512C217F15BB00440AF8 /* 其他.png */,
@@ -221,6 +229,7 @@
 				F882603E216B604700801743 /* RestaurantDAO.swift */,
 				F88260612170B61900801743 /* Rating.swift */,
 				F87D47BC2173360900C9392C /* GetGoogleReviews.swift */,
+				F8E3513F218030E200440AF8 /* Account.swift */,
 			);
 			name = model;
 			sourceTree = "<group>";
@@ -370,8 +379,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E351442180812800440AF8 /* area.png in Resources */,
 				F8E3511A217C6FB600440AF8 /* restaurant.sqlite in Resources */,
 				F87D48092177249700C9392C /* connectmap.png in Resources */,
+				F8E351432180812800440AF8 /* type.png in Resources */,
 				F8A801E7216766C7002BD933 /* LaunchScreen.storyboard in Resources */,
 				F8E3513E217F5C8100440AF8 /* AreaList.plist in Resources */,
 				F8E3512F217F15BC00440AF8 /* 中式.png in Resources */,
@@ -458,6 +469,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-RatingDay/Pods-RatingDay-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
@@ -473,6 +485,7 @@
 			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
@@ -496,6 +509,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8E3513C217F5C0B00440AF8 /* AreaViewController.swift in Sources */,
+				F8E35140218030E200440AF8 /* Account.swift in Sources */,
 				F8E35138217F23F100440AF8 /* TableViewController.swift in Sources */,
 				F8826047216D959F00801743 /* ReviewViewController.swift in Sources */,
 				F882603D216B603100801743 /* Restaurant.swift in Sources */,
