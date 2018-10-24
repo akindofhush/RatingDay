@@ -13,7 +13,6 @@ class HomeTableViewCell: UITableViewCell {
     @IBOutlet var picture: UIImageView!
     @IBOutlet var resName: UILabel!
     @IBOutlet var rateName: UILabel!
-    @IBOutlet var stars: UILabel!
     @IBOutlet var phone: UILabel!
     @IBOutlet var address: UILabel!
     @IBOutlet var type: UILabel!

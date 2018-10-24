@@ -124,10 +124,18 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
         
         return cell
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let next = segue.destination as! ContentViewController
-        next.placeId = list[tableView.indexPathForSelectedRow!.row].placeId
+        if segue.identifier == "content" {
+            let next = segue.destination as! ContentViewController
+            next.placeId = list[tableView.indexPathForSelectedRow!.row].placeId
+        }else if segue.identifier == "type"{
+            
+        }else{
+          
+        }
+        
     }
     
     override func viewDidLoad() {

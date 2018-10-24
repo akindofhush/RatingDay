@@ -97,7 +97,7 @@ class RestaurantDAO{
     }
     
     static func getResByType(type:String)->[Restaurant]?{
-        let data = self.sqlDataToRes(dbPath: dbPath, sqlStr: "SELECT * FROM info WHERE type = \(type)")
+        let data = self.sqlDataToRes(dbPath: dbPath, sqlStr: "SELECT * FROM info WHERE type = \"\(type)\"")
         return data
     }
     

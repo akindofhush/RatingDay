@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>中山區</string>
+	<string>北投區</string>
+	<string>士林區</string>
+	<string>內湖區</string>
+	<string>松山區</string>
+	<string>大同區</string>
+	<string>信義區</string>
+	<string>大安區</string>
+	<string>中正區</string>
+	<string>南港區</string>
+	<string>萬華區</string>
+	<string>文山區</string>
+</array>
+</plist>

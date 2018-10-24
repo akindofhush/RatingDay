@@ -19,7 +19,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CELL2", for: indexPath) as! TableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CELLTWO", for: indexPath) as! TableViewCell
         cell.resName.text = list[indexPath.row].name
         if let data = list[indexPath.row].photo{
             cell.picture.image = UIImage(data: data)
@@ -50,6 +50,7 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         next.placeId = list[tableView.indexPathForSelectedRow!.row].placeId
     }
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
@@ -81,14 +82,6 @@ class TableViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             }
             return comRating0 > comRating1
         })
-    }
-    override func viewWillAppear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = true
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        self.navigationController?.navigationBar.isHidden = false
-        
     }
     
 }

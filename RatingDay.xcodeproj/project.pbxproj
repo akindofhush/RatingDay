@@ -58,6 +58,8 @@
 		F8E35134217F171700440AF8 /* TypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E35133217F171700440AF8 /* TypeViewController.swift */; };
 		F8E35138217F23F100440AF8 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E35137217F23F100440AF8 /* TableViewController.swift */; };
 		F8E3513A217F243400440AF8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E35139217F243400440AF8 /* TableViewCell.swift */; };
+		F8E3513C217F5C0B00440AF8 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8E3513B217F5C0B00440AF8 /* AreaViewController.swift */; };
+		F8E3513E217F5C8100440AF8 /* AreaList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F8E3513D217F5C8100440AF8 /* AreaList.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,6 +125,8 @@
 		F8E35133217F171700440AF8 /* TypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeViewController.swift; sourceTree = "<group>"; };
 		F8E35137217F23F100440AF8 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		F8E35139217F243400440AF8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		F8E3513B217F5C0B00440AF8 /* AreaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
+		F8E3513D217F5C8100440AF8 /* AreaList.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = AreaList.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +253,7 @@
 				F8E35133217F171700440AF8 /* TypeViewController.swift */,
 				F8E35137217F23F100440AF8 /* TableViewController.swift */,
 				F8E35139217F243400440AF8 /* TableViewCell.swift */,
+				F8E3513B217F5C0B00440AF8 /* AreaViewController.swift */,
 			);
 			name = mainpage;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 				F8A801DE216766C5002BD933 /* ViewController.swift */,
 				F8A801E3216766C7002BD933 /* Assets.xcassets */,
 				F8A801E5216766C7002BD933 /* LaunchScreen.storyboard */,
+				F8E3513D217F5C8100440AF8 /* AreaList.plist */,
 				F8A801E8216766C7002BD933 /* Info.plist */,
 				F87D48102179C9F000C9392C /* Main.storyboard */,
 			);
@@ -367,6 +373,7 @@
 				F8E3511A217C6FB600440AF8 /* restaurant.sqlite in Resources */,
 				F87D48092177249700C9392C /* connectmap.png in Resources */,
 				F8A801E7216766C7002BD933 /* LaunchScreen.storyboard in Resources */,
+				F8E3513E217F5C8100440AF8 /* AreaList.plist in Resources */,
 				F8E3512F217F15BC00440AF8 /* 中式.png in Resources */,
 				F88260582170596700801743 /* halfstar.png in Resources */,
 				F8E3512E217F15BC00440AF8 /* 泰式.png in Resources */,
@@ -488,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8E3513C217F5C0B00440AF8 /* AreaViewController.swift in Sources */,
 				F8E35138217F23F100440AF8 /* TableViewController.swift in Sources */,
 				F8826047216D959F00801743 /* ReviewViewController.swift in Sources */,
 				F882603D216B603100801743 /* Restaurant.swift in Sources */,
